@@ -1,38 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Modern Full Stack ECommerce Application with Stripe & Sanity
 
-## Getting Started
+**Fully responsive Modern Full Stack Ecommerce application with Payments functionality**. With Modern design, animations, the ability to add and edit products on the go using a CMS, all advanced cart functionalities, and the complete integration with Stripe so that you can cover real payments. This is the best e-commerce website project that you can currently find on YouTube!
 
-First, run the development server:
+- Advanced React Best Practices such as
+  - Folder and file structure, hooks and refs
+- Advanced State Management of the entire application using React Context API
+- Next.js Best Practices such as
+  - File-based routing, Data fetching that allows server-side rendering and static generation which makes your websites incredibly optimized (show getServerSideProps, getStaticPaths, getStaticProps), and you’ll also learn how to use Next.js as a backend endpoint.
+- You’ll learn how to integrate Stripe to manage payments, products, shipping rates, and the entire checkout process
+- And most importantly you’ll learn how to manage the entire content of your app using Sanity. Sanity is the unified content platform that’ll make the making of our entire app possible. <show sanity desk>
+- Through Sanity, you or your clients will be able to change the store’s homepage and more importantly, the details of all the products in the store, instantly and on the go!
+- Sanity allows us to focus on developing the application without having to worry about the content, file storage, and databases. They’ll cover the dirty work for us and allow us to build scalable and modern e-commerce web applications extremely easily.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## System Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To get started with development, you need to install few tools
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. git
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+   `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   To check your version of git, run:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```shell
+    git --version
+   ```
 
-## Learn More
+2. node & npm
 
-To learn more about Next.js, take a look at the following resources:
+   `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
+   `npm` version 5.6.1 or higher. You will have it after you install node.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   To check your version of node or npm, run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```shell
+    node --version
+    npm --version
+   ```
 
-## Deploy on Vercel
+## Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To set up a development environment, please follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repo
+
+   ```shell
+    git clone https://github.com/pinjamar/ecommerce-web-shop
+   ```
+
+2. Change directory to the project directory and install nextjs
+
+   ```shell
+   cd ecommerce-web-shop
+   npx create-next-app
+   ```
+
+   Now copy the dependencies from the package.json file.
+
+3. Next step is running the app, do that by first changing the folder to the "ecommerce-sanity", after that install npm and run the app
+
+   ```shell
+   npm install --legacy-peer-deps
+   npm run dev
+   ```
+
+   Project will be running in the browser.
+
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+4. To continue setup, stop the app by clicking ctrl+c and install Sanity (yes to all prompts in terminal)
+
+   ```shell
+   npm install -g @sanity/cli
+   ```
+
+   "Project name" - ecommerce-sanity; "Default dataset configuration" - yes, "Template" - Clean project with no predefined schemas.
+   Go to .gitignore file and remove "/" in front of node_modules so git doesn't copy them.
+
+   Start the sanity by typing:
+
+   ```shell
+   sanity start
+   ```
+
+   Copy the files in the "schemas" folder and add some content through the sanity to start working. That's it!

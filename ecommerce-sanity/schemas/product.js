@@ -12,7 +12,9 @@ export default {
           type: 'image',
         },
       ],
-      hotspot: true,
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: 'name',
