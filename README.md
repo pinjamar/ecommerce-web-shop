@@ -80,7 +80,7 @@ To set up a development environment, please follow these steps:
    Start the sanity by typing:
 
    ```shell
-   sanity start
+   npx sanity dev
    ```
 
    Copy the files in the "schemas" folder and add some content through the sanity to start working. That's it!
