@@ -1,4 +1,4 @@
-# Modern Full Stack ECommerce Application with Stripe & Sanity
+# Modern Full Stack ECommerce App with Stripe & Sanity
 
 **Fully responsive Modern Full Stack Ecommerce application with Payments functionality**. Modern design, animations, ability to add and edit products on the go using a CMS, advanced cart functionalities, and the complete integration with Stripe so that you can cover real payments.
 
