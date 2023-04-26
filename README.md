@@ -57,9 +57,10 @@ To set up a development environment, please follow these steps:
 
    Now copy the dependencies from the package.json file.
 
-3. Next step is running the app, do that by first changing the folder to the "ecommerce-sanity", after that install npm and run the app
+3. Next step is running the app, do that by first changing the folder to the "ecommerce-sanity" (or create a folder with some other name), after that install "npm" and run the app
 
    ```shell
+   cd ecommerce-sanity
    npm install --legacy-peer-deps
    npm run dev
    ```
